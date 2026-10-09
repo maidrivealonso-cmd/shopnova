@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNova - Carrito</title>
+
+    <link rel="stylesheet"
+        href="css/estilos.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <button class="icono"
+            type="button">
+            ☰
+        </button>
+
+        <div class="logo-inicio">
+            SHOPNOVA
+        </div>
+
+        <button class="icono"
+            type="button">
+            🛒
+        </button>
+
+    </header>
+
+
+    <!-- CARRITO -->
+    <main class="carrito">
+
+        <div id="listaCarrito"></div>
+
+
+        <!-- RESUMEN -->
+        <div class="resumen-carrito">
+
+            <div>
+                <span>Subtotal</span>
+
+                <strong id="subtotal">
+                    $0
+                </strong>
+            </div>
+
+
+            <div>
+
+                <span>Envío</span>
+
+                <span class="gratis">
+                    Gratis
+                </span>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="total-carrito">
+
+                <strong>
+                    Total
+                </strong>
+
+                <strong id="total">
+                    $0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINALIZAR -->
+        <button class="finalizar"
+            type="button"
+            onclick="window.location.href='pedido.html'">
+
+            Finalizar compra
+
+        </button>
+
+    </main>
+
+
+    <!-- BARRA INFERIOR -->
+    <nav class="barra-inferior">
+
+        <button onclick="window.location.href='index.html'">
+            🏠
+        </button>
+
+        <button onclick="window.location.href='productos.html'">
+            ▦
+        </button>
+
+        <button class="activo">
+            🛍️
+        </button>
+
+        <button onclick="window.location.href='perfil.html'">
+            👤
+        </button>
+
+    </nav>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

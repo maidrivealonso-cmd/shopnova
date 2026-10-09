@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNova - Datos del pedido</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <button class="icono"
+            onclick="window.location.href='carrito.html'">
+            ←
+        </button>
+
+        <div class="logo-inicio">
+            SHOPNOVA
+        </div>
+
+        <button class="icono"
+            onclick="window.location.href='carrito.html'">
+            🛒
+        </button>
+
+    </header>
+
+
+    <!-- CONTENIDO -->
+    <main class="pedido">
+
+        <h1>Datos del pedido</h1>
+
+
+        <!-- DATOS DE ENVÍO -->
+
+        <h2 class="titulo-seccion">
+            Datos de envío
+        </h2>
+
+        <div class="datos-envio">
+
+            <!-- NOMBRE -->
+
+            <div class="campo-envio">
+
+                <span class="icono-campo">
+                    👤
+                </span>
+
+                <div>
+
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ej. María García"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIRECCIÓN -->
+
+            <div class="campo-envio">
+
+                <span class="icono-campo">
+                    📍
+                </span>
+
+                <div>
+
+                    <label for="direccion">
+                        Dirección
+                    </label>
+
+                    <input
+                        type="text"
+                        id="direccion"
+                        placeholder="Ej. Calle 10 # 5-20"
+                        required>
+
+                </div>
+
+            </div>
+
+
+            <!-- CIUDAD Y MUNICIPIO -->
+
+            <div class="fila-envio">
+
+                <div class="campo-envio pequeño">
+
+                    <span class="icono-campo">
+                        🏙️
+                    </span>
+
+                    <div>
+
+                        <label for="ciudad">
+                            Ciudad
+                        </label>
+
+                        <input
+                            type="text"
+                            id="ciudad"
+                            placeholder="Ciudad"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="campo-envio pequeño">
+
+                    <span class="icono-campo">
+                        📌
+                    </span>
+
+                    <div>
+
+                        <label for="municipio">
+                            Municipio
+                        </label>
+
+                        <input
+                            type="text"
+                            id="municipio"
+                            placeholder="Municipio"
+                            required>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TELÉFONO -->
+
+            <div class="campo-envio">
+
+                <span class="icono-campo">
+                    📱
+                </span>
+
+                <div>
+
+                    <label for="telefono">
+                        Teléfono
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="Ej. 300 123 4567"
+                        required>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MÉTODO DE PAGO -->
+
+        <h2 class="titulo-seccion">
+            Método de pago
+        </h2>
+
+        <div class="metodos-pago">
+
+
+            <!-- TARJETA -->
+
+            <label class="metodo">
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="tarjeta"
+                    required>
+
+                <span>
+                    💳
+                </span>
+
+                <div>
+
+                    <strong>
+                        Tarjeta
+                    </strong>
+
+                    <small>
+                        Débito o crédito
+                    </small>
+
+                </div>
+
+            </label>
+
+
+            <!-- NEQUI -->
+
+            <label class="metodo">
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="nequi">
+
+                <span class="logo-pago">
+                    Nequi
+                </span>
+
+                <div>
+
+                    <strong>
+                        Nequi
+                    </strong>
+
+                    <small>
+                        Pago con Nequi
+                    </small>
+
+                </div>
+
+            </label>
+
+
+            <!-- CONTRA ENTREGA -->
+
+            <label class="metodo">
+
+                <input
+                    type="radio"
+                    name="pago"
+                    value="contra-entrega">
+
+                <span>
+                    💵
+                </span>
+
+                <div>
+
+                    <strong>
+                        Contra entrega
+                    </strong>
+
+                    <small>
+                        Paga al recibir
+                    </small>
+
+                </div>
+
+            </label>
+
+        </div>
+
+
+        <!-- PRODUCTO -->
+
+        <h2 class="titulo-seccion">
+            Resumen del producto
+        </h2>
+
+
+        <div class="producto-pedido">
+
+            <div class="imagen-pedido">
+                Imagen
+            </div>
+
+
+            <div class="info-producto-pedido">
+
+                <h3>
+                    Essential White Tee
+                </h3>
+
+                <p>
+                    Talla: M
+                </p>
+
+                <p>
+                    Color: Blanco
+                </p>
+
+                <p class="precio-producto">
+                    $95.000
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESUMEN DE PAGO -->
+
+        <div class="resumen-pedido">
+
+            <h2>
+                Resumen de compra
+            </h2>
+
+
+            <div>
+
+                <span>
+                    Subtotal
+                </span>
+
+                <span>
+                    $95.000
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Envío
+                </span>
+
+                <span class="gratis">
+                    7.000
+                </span>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="total-pedido">
+
+                <strong>
+                    Total a pagar
+                </strong>
+
+                <strong>
+                    $102.000
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTÓN -->
+
+        <button
+            class="boton-pedido"
+            type="button"
+            onclick="window.location.href='compra.html'">
+
+            Realizar pedido
+
+        </button>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNova - Inicio</title>
+
+    <link rel="stylesheet"
+        href="css/estilos.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+<div class="inicio">
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <button class="icono"
+            type="button">
+            ☰
+        </button>
+
+        <div class="logo-inicio">
+            SHOPNOVA
+        </div>
+
+        <button class="icono"
+            type="button"
+            onclick="window.location.href='carrito.html'">
+            🛒
+        </button>
+
+    </header>
+
+
+    <!-- BUSCADOR -->
+    <div class="buscador">
+
+        <input
+            type="text"
+            id="buscadorProductos"
+            placeholder="Buscar camisetas">
+
+        <span>🔍</span>
+
+    </div>
+
+
+    <!-- OFERTA -->
+    <section class="oferta">
+
+        <h2>
+            Oferta de<br>
+            temporada
+        </h2>
+
+        <p>
+            20% de descuento en básicas
+        </p>
+
+        <button type="button"
+            onclick="window.location.href='productos.html'">
+
+            Comprar ahora
+
+        </button>
+
+    </section>
+
+
+    <!-- CATEGORÍAS -->
+    <div class="categorias">
+
+        <button>
+            Hombre
+        </button>
+
+        <button class="categoria-activa">
+            Mujer
+        </button>
+
+        <button>
+            Unisex
+        </button>
+
+        <button>
+            Ofertas
+        </button>
+
+    </div>
+
+
+    <!-- PRODUCTOS -->
+    <section
+        class="productos-inicio"
+        id="listaProductos">
+
+
+        <!-- PRODUCTO 1 -->
+        <div class="tarjeta-producto"
+            data-nombre="Camiseta básica algodón">
+
+            <div class="imagen-producto">
+                Imagen
+            </div>
+
+            <h3>
+                Camiseta básica algodón
+            </h3>
+
+            <p>
+                $75.000
+            </p>
+
+            <button type="button"
+                onclick="window.location.href='detalle-producto.html'">
+
+                Añadir
+
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCTO 2 -->
+        <div class="tarjeta-producto"
+            data-nombre="Premium fit azul">
+
+            <div class="imagen-producto">
+                Imagen
+            </div>
+
+            <h3>
+                Premium fit azul
+            </h3>
+
+            <p>
+                $98.999
+            </p>
+
+            <button type="button"
+                onclick="window.location.href='detalle-producto.html'">
+
+                Añadir
+
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCTO 3 -->
+        <div class="tarjeta-producto"
+            data-nombre="Camiseta casual">
+
+            <div class="imagen-producto">
+                Imagen
+            </div>
+
+            <h3>
+                Camiseta casual
+            </h3>
+
+            <p>
+                $80.000
+            </p>
+
+            <button type="button"
+                onclick="window.location.href='detalle-producto.html'">
+
+                Añadir
+
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCTO 4 -->
+        <div class="tarjeta-producto"
+            data-nombre="Camiseta orgánica">
+
+            <div class="imagen-producto">
+                Imagen
+            </div>
+
+            <h3>
+                Camiseta orgánica
+            </h3>
+
+            <p>
+                $125.000
+            </p>
+
+            <button type="button"
+                onclick="window.location.href='detalle-producto.html'">
+
+                Añadir
+
+            </button>
+
+        </div>
+
+
+        <p id="sinResultados"
+            style="display:none;">
+            No se encontraron productos.
+        </p>
+
+    </section>
+
+
+    <!-- BARRA INFERIOR -->
+    <nav class="barra-inferior">
+
+        <button onclick="window.location.href='index.html'">
+            🏠
+        </button>
+
+        <button onclick="window.location.href='productos.html'">
+            ▦
+        </button>
+
+        <button onclick="window.location.href='carrito.html'">
+            🛍️
+        </button>
+
+        <button onclick="window.location.href='perfil.html'">
+            👤
+        </button>
+
+    </nav>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>

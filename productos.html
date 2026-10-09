@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNova - Catálogo</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+
+<body>
+
+<div class="catalogo-app">
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <button class="icono">
+            ☰
+        </button>
+
+        <div class="logo-inicio">
+            SHOPNOVA
+        </div>
+
+        <button class="icono"
+            onclick="window.location.href='carrito.html'">
+            🛒
+        </button>
+
+    </header>
+
+
+    <!-- TÍTULO -->
+    <div class="titulo-catalogo">
+
+        <h1>Catálogo de productos</h1>
+
+        <p>Encuentra tu estilo</p>
+
+    </div>
+
+
+    <!-- CATÁLOGO -->
+
+    <main class="grid-productos">
+
+
+        <!-- PRODUCTO 1 -->
+
+        <article class="card-producto"
+    onclick="window.location.href='detalle-producto.html'">
+
+    <div class="foto-producto">
+        Imagen
+    </div>
+
+    <div class="info-producto">
+
+        <h2>
+            Camiseta básica algodón
+        </h2>
+
+        <p>
+            $75.000
+        </p>
+
+        <button onclick="event.stopPropagation(); agregarAlCarrito(1)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+</article>
+
+
+
+
+        <!-- PRODUCTO 2 -->
+        <article class="card-producto"
+    onclick="window.location.href='detalle-producto.html'">
+
+    <div class="foto-producto">
+        Imagen
+    </div>
+
+    <div class="info-producto">
+
+        <h2>
+            Premium Fit Blue
+        </h2>
+
+        <p>
+            $98.999
+        </p>
+
+        <button onclick="event.stopPropagation(); agregarAlCarrito(2)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+</article>
+      
+        <!-- PRODUCTO 3 -->
+
+       <article class="card-producto"
+    onclick="window.location.href='detalle-producto.html'">
+
+    <div class="foto-producto">
+        Imagen
+    </div>
+
+    <div class="info-producto">
+
+        <h2>
+            Camiseta Casual
+        </h2>
+
+        <p>
+            $80.000
+        </p>
+
+        <button onclick="event.stopPropagation(); agregarAlCarrito(3)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+</article>
+
+
+        <!-- PRODUCTO 4 -->
+
+       <article class="card-producto"
+    onclick="window.location.href='detalle-producto.html'">
+
+    <div class="foto-producto">
+        Imagen
+    </div>
+
+    <div class="info-producto">
+
+        <h2>
+            Camiseta Orgánica
+        </h2>
+
+        <p>
+            $125.000
+        </p>
+
+        <button onclick="event.stopPropagation(); agregarAlCarrito(4)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+</article>
+
+        <!-- PRODUCTO 5 -->
+
+       <article class="card-producto"
+    onclick="window.location.href='detalle-producto.html'">
+
+    <div class="foto-producto">
+        Imagen
+    </div>
+
+    <div class="info-producto">
+
+        <h2>
+            Camiseta Casual
+        </h2>
+
+        <p>
+            $68.000
+        </p>
+
+        <button onclick="event.stopPropagation(); agregarAlCarrito(5)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+</article>
+
+
+        <!-- PRODUCTO 6 -->
+
+     <article class="card-producto"
+    onclick="window.location.href='detalle-producto.html'">
+
+    <div class="foto-producto">
+        Imagen
+    </div>
+
+    <div class="info-producto">
+
+        <h2>
+            Midnight Black Tee
+        </h2>
+
+        <p>
+            $87.000
+        </p>
+
+        <button onclick="event.stopPropagation(); agregarAlCarrito(6)">
+            Agregar al carrito
+        </button>
+
+    </div>
+
+</article>
+
+    </main>
+
+
+    <!-- BARRA INFERIOR -->
+
+    <nav class="barra-inferior">
+
+        <button onclick="window.location.href='index.html'">
+            🏠
+            <span>Inicio</span>
+        </button>
+
+        <button class="activo">
+            ▦
+            <span>Productos</span>
+        </button>
+
+        <button onclick="window.location.href='carrito.html'">
+            🛒
+            <span>Carrito</span>
+        </button>
+
+        <button onclick="window.location.href='perfil.html'">
+            👤
+            <span>Perfil</span>
+        </button>
+
+    </nav>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNova - Iniciar sesión</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="logo">ShopNova</div>
+
+        <p class="subtitulo">Inicia sesión en tu cuenta</p>
+
+        <form class="formulario">
+
+            <label for="correo">Correo electrónico</label>
+            <input 
+                type="email" 
+                id="correo" 
+                name="correo"
+                placeholder="Ingresa tu correo"
+            >
+
+            <label for="contraseña">Contraseña</label>
+            <input 
+                type="password" 
+                id="contraseña" 
+                name="contraseña"
+                placeholder="Ingresa tu contraseña"
+            >
+
+            <button class="boton" type="submit">
+                Iniciar sesión
+            </button>
+
+        </form>
+
+        <div class="registro">
+            <p>¿No tienes una cuenta?</p>
+          <button type="button" onclick="window.location.href='registro.html'">
+    Registrarse
+</button>
+        </div>
+
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>

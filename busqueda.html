@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNova - Buscar</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="encabezado">
+
+        <button class="icono"
+            onclick="window.location.href='index.html'">
+            ←
+        </button>
+
+        <div class="logo-inicio">
+            SHOPNOVA
+        </div>
+
+        <button class="icono"
+            onclick="window.location.href='carrito.html'">
+            🛒
+        </button>
+
+    </header>
+
+
+    <main class="busqueda">
+
+        <h1>Buscar productos</h1>
+
+
+        <div class="campo-busqueda">
+
+            <input type="text"
+                placeholder="Buscar camisetas">
+
+            <button type="button">
+                🔍
+            </button>
+
+        </div>
+
+
+        <h2>Filtros</h2>
+
+
+        <label for="talla">Talla</label>
+
+        <select id="talla">
+
+            <option>Todas</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+
+        </select>
+
+
+        <label for="color">Color</label>
+
+        <select id="color">
+
+            <option>Todos</option>
+            <option>Blanco</option>
+            <option>Negro</option>
+            <option>Azul</option>
+            <option>Gris</option>
+
+        </select>
+
+
+        <label for="precio">Precio</label>
+
+        <select id="precio">
+
+            <option>Cualquier precio</option>
+            <option>Menos de $70.000</option>
+            <option>$70.000 - $100.000</option>
+            <option>Más de $100.000</option>
+
+        </select>
+
+
+        <button class="aplicar-filtros"
+            type="button">
+
+            Aplicar filtros
+
+        </button>
+
+
+        <h2 class="resultados">
+            Productos encontrados
+        </h2>
+
+
+        <div class="resultado-producto">
+
+            <div class="imagen-resultado">
+                Imagen
+            </div>
+
+            <div>
+                <h3>Essential White Tee</h3>
+                <p>$95.000</p>
+            </div>
+
+        </div>
+
+
+        <div class="resultado-producto">
+
+            <div class="imagen-resultado">
+                Imagen
+            </div>
+
+            <div>
+                <h3>Midnight Black Tee</h3>
+                <p>$75.000</p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <nav class="barra-inferior">
+
+        <button onclick="window.location.href='index.html'">
+            🏠
+            <span>Inicio</span>
+        </button>
+
+        <button class="activo">
+            🔍
+            <span>Buscar</span>
+        </button>
+
+        <button onclick="window.location.href='carrito.html'">
+            🛍️
+            <span>Carrito</span>
+        </button>
+
+        <button onclick="window.location.href='perfil.html'">
+            👤
+            <span>Perfil</span>
+        </button>
+
+    </nav>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

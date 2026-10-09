@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopNova - Detalle</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+
+        <button class="icono" type="button">
+            ☰
+        </button>
+
+        <div class="logo-inicio">
+            SHOPNOVA
+        </div>
+
+        <button class="icono"
+            type="button"
+            onclick="window.location.href='carrito.html'">
+            🛒
+        </button>
+
+    </header>
+
+
+    <!-- IMAGEN DEL PRODUCTO -->
+    <div class="imagen-detalle">
+        Imagen del producto
+    </div>
+
+
+    <!-- INFORMACIÓN -->
+    <main class="informacion-producto">
+
+        <h1>Essential White Tee</h1>
+
+        <h2>$95.000</h2>
+
+        <p class="descripcion">
+            Camiseta de algodón orgánico de alta calidad
+            con corte moderno y tacto suave. Perfecta para
+            un look casual claro que prioriza la comodidad
+            y la sostenibilidad.
+        </p>
+
+
+        <!-- COLOR -->
+        <h3>Color</h3>
+
+        <div class="colores">
+
+            <button class="color negro"
+                type="button"
+                data-color="Negro">
+            </button>
+
+            <button class="color rojo"
+                type="button"
+                data-color="Rojo">
+            </button>
+
+            <button class="color azul"
+                type="button"
+                data-color="Azul">
+            </button>
+
+            <button class="color gris"
+                type="button"
+                data-color="Gris">
+            </button>
+
+        </div>
+
+
+        <!-- TALLA -->
+        <div class="titulo-talla">
+
+            <h3>Talla</h3>
+
+            <a href="#">
+                Guía de tallas
+            </a>
+
+        </div>
+
+
+        <div class="tallas">
+
+            <button type="button" data-talla="S">S</button>
+
+            <button type="button" data-talla="M">M</button>
+
+            <button type="button" data-talla="L">L</button>
+
+            <button type="button" data-talla="XL">XL</button>
+
+        </div>
+
+
+        <!-- CANTIDAD -->
+        <div class="cantidad">
+
+            <button type="button" id="menos">
+                -
+            </button>
+
+            <span id="cantidad">
+                1
+            </span>
+
+            <button type="button" id="mas">
+                +
+            </button>
+
+        </div>
+
+
+        <!-- AGREGAR AL CARRITO -->
+        <button class="agregar-carrito"
+            type="button"
+            id="agregarCarrito">
+
+            Agregar al carrito
+
+        </button>
+
+    </main>
+
+
+    <!-- BARRA INFERIOR -->
+    <nav class="barra-inferior">
+
+        <button onclick="window.location.href='index.html'">
+            🏠
+        </button>
+
+        <button onclick="window.location.href='productos.html'">
+            ▦
+        </button>
+
+        <button onclick="window.location.href='carrito.html'">
+            🛍️
+        </button>
+
+        <button onclick="window.location.href='perfil.html'">
+            👤
+        </button>
+
+    </nav>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
