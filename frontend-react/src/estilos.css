@@ -1,0 +1,49 @@
+@import url('./estilos-originales.css');
+:root{font-family:Arial,sans-serif;color:#222;background:#eaf3ff;font-synthesis:none}
+*{box-sizing:border-box}
+body{margin:0;display:block;background:#eaf3ff;min-height:100vh}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.sn-app{max-width:1000px;min-height:100vh;margin:auto;background:#f8fbff;padding-bottom:75px;box-shadow:0 0 20px #1a5da81a}
+.sn-header{height:70px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid #d5e3f2;position:sticky;top:0;z-index:2}
+.sn-icon,.sn-logo{border:0;background:transparent;color:#1a5da8;font-weight:bold;font-size:20px}
+.sn-icon span{font-size:12px;background:#1a5da8;color:white;border-radius:50%;padding:2px 6px}
+.sn-logo{letter-spacing:1px;font-size:24px}
+.sn-hero{margin:20px;background:#1a5da8;color:white;border-radius:16px;padding:35px 28px;min-height:190px}
+.sn-hero p{margin:0 0 12px}.sn-hero h1{font-size:30px;margin:8px 0}.sn-hero button,.sn-primary{border:0;border-radius:8px;background:#1a5da8;color:white;font-weight:bold;padding:12px 16px}
+.sn-hero button{background:white;color:#1a5da8;margin-top:12px}
+.sn-search{display:flex;gap:10px;margin:20px;align-items:center;background:white;border:1px solid #d5e3f2;border-radius:10px;padding:10px 14px}
+.sn-search input{width:100%;border:0;outline:0;padding:5px}
+.sn-title,.sn-page-title{margin:25px 20px 15px}.sn-page-title{text-align:center;padding:20px 0}.sn-page-title h1,.sn-form-page h1{color:#1a5da8}
+.sn-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding:0 20px 25px}
+.sn-product-card{background:white;border:1px solid #dce8f5;border-radius:13px;overflow:hidden;box-shadow:0 4px 12px #1a5da80c}
+.sn-product-image,.sn-product-thumb{height:145px;background:linear-gradient(135deg,#eaf3ff,#d4e6fa);display:flex;align-items:center;justify-content:center;color:#1a5da8;font-weight:bold;letter-spacing:2px;border:0;width:100%}
+.sn-product-info{padding:15px}.sn-product-info h2{font-size:17px;margin:0 0 10px}.sn-product-info p,.sn-price{font-size:19px;color:#1a5da8;font-weight:bold}.sn-product-info .sn-primary{width:100%;margin:8px 0}
+.sn-link{border:0;background:transparent;color:#1a5da8;text-decoration:underline;padding:8px 0}
+.sn-form-page{max-width:520px;margin:30px auto;background:white;border-radius:15px;padding:25px;box-shadow:0 6px 22px #1a5da81a}
+.sn-form-page form{display:flex;flex-direction:column;gap:9px;margin-top:18px}
+.sn-form-page label{font-weight:bold;color:#1a5da8;margin-top:7px}
+.sn-form-page input,.sn-form-page select{width:100%;padding:12px;border:1px solid #cbdced;border-radius:8px;background:white}
+.sn-form-page .sn-primary{margin-top:16px;width:100%}
+.sn-back{border:0;background:transparent;color:#1a5da8;margin-bottom:15px}
+.sn-product-image{height:220px;border-radius:12px;margin-bottom:20px;font-size:25px}
+.sn-sizes,.sn-quantity{display:flex;align-items:center;gap:10px;margin:10px 0 18px}
+.sn-sizes button,.sn-quantity button{background:white;border:1px solid #bfd3e8;border-radius:7px;padding:9px 14px}
+.sn-sizes button.active{background:#1a5da8;color:white}
+.sn-cart-list{padding:0 20px}.sn-cart-item{display:flex;gap:15px;background:white;border:1px solid #dce8f5;border-radius:12px;padding:14px;margin-bottom:12px}
+.sn-product-thumb{width:95px;height:100px;border-radius:8px;flex-shrink:0}
+.sn-cart-info h3{margin:0 0 8px}.sn-cart-info p{margin:6px 0}.sn-remove{color:#b42318!important;border-color:#e9b8b8!important}
+.sn-summary{margin:20px;background:white;padding:20px;border:1px solid #dce8f5;border-radius:12px}
+.sn-summary p{display:flex;justify-content:space-between;margin:8px 0}.sn-summary .sn-total{border-top:1px solid #dce8f5;padding-top:14px;font-size:18px}
+.sn-summary .sn-primary{width:100%;margin-top:15px}.sn-empty,.sn-confirm{text-align:center;padding:35px 20px}.sn-empty .sn-primary{margin-top:15px}
+.sn-check{margin:auto auto 15px;width:60px;height:60px;border-radius:50%;background:#e0f4e8;color:#18794e;display:grid;place-items:center;font-size:35px}
+.sn-message{margin:12px 20px;background:#e5f4eb;color:#17663d;padding:12px;border-radius:8px}
+.sn-footer{text-align:center;padding:25px 15px;color:#65758b;font-size:13px}
+.sn-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,1000px);display:flex;justify-content:space-around;background:white;border-top:1px solid #d5e3f2;padding:12px 4px;z-index:3}
+.sn-nav button{border:0;background:transparent;color:#1a5da8;font-weight:bold}
+.sn-no-results{padding:20px}
+@media(max-width:700px){.sn-products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:0 12px}.sn-hero{margin:12px;padding:25px 20px}.sn-search{margin:12px}.sn-title,.sn-page-title{margin-left:12px;margin-right:12px}.sn-product-image{height:120px}.sn-product-info{padding:10px}.sn-product-info h2{font-size:15px}.sn-form-page{margin:18px 12px;padding:20px}}
+@media(max-width:430px){.sn-products{grid-template-columns:1fr 1fr}.sn-product-info .sn-primary{font-size:12px;padding:10px 6px}.sn-logo{font-size:20px}}
+
+.sn-login{text-align:center;margin-top:55px}.sn-login h1{letter-spacing:3px;margin-bottom:10px}.sn-login h2{color:#1a5da8}.sn-login form{text-align:left}.sn-login .sn-link{margin-top:10px}.sn-product-image{font-size:76px;background:linear-gradient(135deg,#f3f7fc,#d9e9f9)}.sn-product-thumb{font-size:42px}.sn-order-page{max-width:650px}
+.sn-account-page{text-align:center;max-width:520px;margin:30px auto}.sn-account-avatar{width:62px;height:62px;border-radius:50%;background:#eaf3ff;color:#1a5da8;display:grid;place-items:center;margin:0 auto 15px;font-size:28px;border:2px solid #cbdced}.sn-account-page h1{font-size:25px;color:#596579;margin:8px 0}.sn-account-email{color:#6b7280;margin:5px 0 25px}.sn-account-options{border-top:1px solid #e3eaf2;margin-top:20px}.sn-account-options button{width:100%;display:grid;grid-template-columns:35px 1fr 30px;align-items:center;text-align:left;padding:17px 10px;background:white;border:0;border-bottom:1px solid #e3eaf2;color:#4b5563}.sn-account-options button span{font-size:20px;color:#1a5da8}.sn-account-options button b{font-size:22px;color:#1a5da8;font-weight:normal}.sn-payment-note{font-size:13px;color:#65758b;background:#f2f7fd;padding:10px;border-radius:8px}
